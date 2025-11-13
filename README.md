@@ -15,6 +15,8 @@
 mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
+http://localhost:8080/swagger-ui/index.html
+
 ## Alternatives
 
 - https://github.com/st-tu-dresden/salespoint
