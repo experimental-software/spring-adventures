@@ -1,4 +1,4 @@
-package com.fivestandards.spring_adventures.humanresources;
+package com.experimental_software.spring_adventures.humanresources;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

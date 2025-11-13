@@ -1,4 +1,4 @@
-package com.fivestandards.spring_adventures.humanresources;
+package com.experimental_software.spring_adventures.humanresources;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

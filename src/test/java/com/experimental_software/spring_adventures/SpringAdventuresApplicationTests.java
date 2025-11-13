@@ -1,4 +1,4 @@
-package com.fivestandards.spring_adventures;
+package com.experimental_software.spring_adventures;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

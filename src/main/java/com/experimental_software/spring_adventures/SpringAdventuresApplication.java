@@ -1,4 +1,4 @@
-package com.fivestandards.spring_adventures;
+package com.experimental_software.spring_adventures;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

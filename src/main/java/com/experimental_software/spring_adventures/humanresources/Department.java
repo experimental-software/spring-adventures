@@ -1,4 +1,4 @@
-package com.fivestandards.spring_adventures.production;
+package com.experimental_software.spring_adventures.humanresources;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,21 +9,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "product", schema = "production")
+@Table(name = "department", schema = "humanresources")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Product {
+public class Department {
 
     @Id
-    @Column(name = "productid")
-    private Integer productId;
+    @Column(name = "departmentid")
+    private Integer departmentId;
 
-    @Column(name = "productnumber")
-    private String productNumber;
-
-    @Column(name = "name")
+    @Column(name = "name", length = 64)
     private String name;
-
-
 }
