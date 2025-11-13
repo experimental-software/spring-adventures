@@ -1,0 +1,14 @@
+services:
+  database:
+    image: postgres:latest
+    container_name: adventure_works_postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - adventure_works_postgres_db:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+
+volumes:
+  adventure_works_postgres_db:

@@ -2,6 +2,19 @@
 
 > playground and reference application
 
+## Dependencies
+
+- Maven
+- Docker
+
+## Development
+
+### Start application
+
+```sh
+mvn spring-boot:run -Dspring-boot.run.profiles=dev
+```
+
 ## Alternatives
 
 - https://github.com/st-tu-dresden/salespoint

@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-adventures
+  jpa:
+    #hibernate:
+    #  ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        generate_statistics: true
+
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/Adventureworks"
+    username: "test"
+    password: "test"
+
+logging:
+  level:
+    org.hibernate.stat: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.hibernate.orm.jdbc.extract: TRACE
