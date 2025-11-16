@@ -9,6 +9,23 @@
 
 ## Development
 
+### AdventureWorks database
+
+The project builds upon the "AdventureWorks" database from [NorfolkDataSci/adventure-works-postgres](https://github.com/NorfolkDataSci/adventure-works-postgres).
+
+```sh
+docker compose up -d 
+```
+
+```sh
+cd /path/to/adventure-works-postgres/
+
+export PGPASSWORD=test
+
+psql -h 0.0.0.0 -p 5432 -U test -c 'CREATE DATABASE "Adventureworks";'
+psql -h 0.0.0.0 -p 5432 -U test -d Adventureworks < install.sql
+```
+
 ### Start application
 
 ```sh
