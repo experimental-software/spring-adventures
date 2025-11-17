@@ -11,6 +11,8 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.NamedAttributeNode;
 import jakarta.persistence.NamedEntityGraph;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -38,6 +40,9 @@ public class ProductInventory {
     @Column(name = "quantity")
     private short quantity;
 
+    @Builder
+    @AllArgsConstructor
+    @NoArgsConstructor // JPA
     public static class ProductInventoryId implements Serializable {
         private Integer locationId;
         private Product product;

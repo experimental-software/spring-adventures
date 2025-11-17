@@ -8,10 +8,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.PagedModel;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -45,5 +48,19 @@ class ProductInventoryController {
     public ResponseEntity<List<ProductInventory>> getTop3ProductInventories(Pageable pageable) {
         List<ProductInventory> productInventories = productInventoryRepository.findTop3By(pageable);
         return ResponseEntity.ok(productInventories);
+    }
+
+    @DeleteMapping(path = "/api/product-inventories")
+    public ResponseEntity<Void> deleteProductInventory(
+        @RequestParam @NotNull Integer productId,
+        @RequestParam @NotNull Integer locationId
+    ) {
+        productInventoryRepository.deleteById(ProductInventory.ProductInventoryId.builder()
+            .locationId(locationId)
+            .product(Product.builder()
+                .productId(productId)
+                .build())
+            .build());
+        return ResponseEntity.ok().build();
     }
 }
