@@ -1,6 +1,6 @@
 # Spring Adventures
 
-> playground and reference application
+> Reference project for mid-size Spring Boot applications; using Postgres, JPA, and Spring Modulith.
 
 ## Dependencies
 
