@@ -5,9 +5,9 @@ Reference project for mid-size Spring Boot applications
 ## Technology stack
 
 - [Java](https://dev.java/)
-- Spring Boot, Spring Modulith
-- Postgres, JPA
-- Maven
+- [Spring Boot](https://spring.io/projects/spring-boot), [Spring Modulith](https://spring.io/projects/spring-modulith)
+- [Postgres](https://www.postgresql.org/docs/current/), [JPA](https://jakarta.ee/specifications/persistence/)
+- [Maven](https://maven.apache.org/)
 
 ## Dependencies
 
