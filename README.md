@@ -85,3 +85,8 @@ docker push experimentalsoftware/spring-adventures:backend-latest
 - https://leasingninja.io/
 - https://github.com/thombergs/buckpal
 - https://github.com/HexArchBook/bluezone_pro
+
+## Credits
+
+- The "Adventures" domain is derived from https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
+- Inspiration for new app features: https://www.baeldung.com/category/weekly-review
