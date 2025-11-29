@@ -84,4 +84,4 @@ docker push experimentalsoftware/spring-adventures:backend-latest
 - https://github.com/st-tu-dresden/salespoint
 - https://leasingninja.io/
 - https://github.com/thombergs/buckpal
-- https://github.com/HexArchBook/bluezone_pro/tree/main/src/application/bluezone-app
+- https://github.com/HexArchBook/bluezone_pro
