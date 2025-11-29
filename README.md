@@ -4,7 +4,7 @@ Reference project for mid-size Spring Boot applications
 
 ## Technology stack
 
-- Java
+- [Java](https://dev.java/)
 - Spring Boot, Spring Modulith
 - Postgres, JPA
 - Maven
